@@ -1,0 +1,44 @@
+<app-search-bar (filterText)="onFilterProduct($event)"></app-search-bar>
+<div class="container">
+  <ng-container>
+    <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">Product ID</div>
+        <div class="col col-2">Product Name</div>
+        <div class="col col-3">Price</div>
+        <div class="col col-4">Stock</div>
+      </li>
+    </ul>
+    <ul *ngFor="let item of items" class="responsive-table">
+      <li
+        class="table-row"
+        [ngStyle]="{
+          backgroundColor: item.stock === 'available' ? 'pink' : '#f43f5e'
+        }"
+        *ngIf="
+          searchText === '' ||
+          item.productName.toLowerCase().includes(searchText)
+        "
+      >
+        <div class="col col-1" data-label="Product ID">
+          {{ item.id }}
+        </div>
+        <div class="col col-2" data-label="Product Name">
+          {{ item.productName }}
+        </div>
+        <div class="col col-3" data-label="Price">
+          {{ item.price }}
+        </div>
+        <div
+          class="col col-3"
+          data-label="Price"
+          [ngStyle]="{
+            color: item.stock === 'available' ? '#0d9488' : '#1e293b'
+          }"
+        >
+          {{ item.stock }}
+        </div>
+      </li>
+    </ul>
+  </ng-container>
+</div>

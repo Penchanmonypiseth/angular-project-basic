@@ -1,0 +1,61 @@
+.container {
+  max-width: 1300px;
+  margin: 20px auto;
+  position: relative;
+  left: -25px;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.responsive-table li {
+  border-radius: 3px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+}
+.table-header {
+  background-color: #95a5a6;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.table-row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.col-1 {
+  flex-basis: 10%;
+}
+.col-2 {
+  flex-basis: 40%;
+}
+.col-3 {
+  flex-basis: 25%;
+}
+.col-4 {
+  flex-basis: 25%;
+}
+.responsive-table li:hover {
+  transform: translateX(10px);
+ color: rgb(119, 119, 8);
+  background: linear-gradient(
+    90deg,
+    rgba(226, 190, 190, 0.969625350140056) 1%,
+    rgba(153, 206, 222, 1) 13%,
+    rgba(112, 185, 204, 1) 29%,
+    rgba(122, 203, 220, 1) 43%,
+    rgba(208, 114, 163, 1) 54%,
+    rgba(203, 197, 197, 1) 78%,
+    rgba(0, 212, 255, 1) 87%,
+    rgba(116, 211, 160, 1) 100%
+  );
+  transition: all ease-in 0.2s;
+}

@@ -1,0 +1,28 @@
+.nav-header {
+  width: 1400px;
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: #e9e3e3;
+  box-shadow: 5px 5px 25px #e8e8e8, -5px -5px 25px #ffffff;
+}
+.nav-menu a {
+  padding: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+  color: black;
+}
+.nav-header h1 {
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-left: 10px;
+}
