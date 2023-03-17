@@ -7,7 +7,9 @@ import { ProductComponent } from './product-page/product/product.component';
 import { NavComponent } from './product-page/nav/nav.component';
 import { SearchBarComponent } from './product-page/search-bar/search-bar.component';
 import { FormsModule } from '@angular/forms';
-
+import { setBackgroundDirective } from './custom-directive/setBackground.directive';
+import { HighlightDirective } from './custom-directive/highlight.directive';
+import { HoverHostlistnerDirective } from './custom-directive/hover-hostlistner.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +17,9 @@ import { FormsModule } from '@angular/forms';
     ProductComponent,
     NavComponent,
     SearchBarComponent,
+    setBackgroundDirective,
+    HighlightDirective,
+    HoverHostlistnerDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

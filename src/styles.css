@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.new-class {
+  color: yellow;
+}
+.mouse-hover {
+  transform: rotate(45deg);
+  transition: all 0.3s;
+}
+.mouse-leave {
+  transform: rotate(0deg);
+  transition: all 0.3s;
+}
