@@ -10,6 +10,11 @@ import { FormsModule } from '@angular/forms';
 import { setBackgroundDirective } from './custom-directive/setBackground.directive';
 import { HighlightDirective } from './custom-directive/highlight.directive';
 import { HoverHostlistnerDirective } from './custom-directive/hover-hostlistner.directive';
+import { TodoComponent } from './todo-app/todo/todo.component';
+import { HeaderComponent } from './todo-app/header/header.component';
+import { ButtonComponent } from './todo-app/button/button.component';
+import { TasksContentComponent } from './todo-app/tasks-content/tasks-content.component';
+import { TasksItemsComponent } from './todo-app/tasks-items/tasks-items.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +25,11 @@ import { HoverHostlistnerDirective } from './custom-directive/hover-hostlistner.
     setBackgroundDirective,
     HighlightDirective,
     HoverHostlistnerDirective,
+    TodoComponent,
+    HeaderComponent,
+    ButtonComponent,
+    TasksContentComponent,
+    TasksItemsComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
