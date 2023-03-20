@@ -38,6 +38,7 @@ body {
   border: none;
   padding: 10px 20px;
   margin: 5px;
+  margin-bottom: 30px;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
@@ -85,4 +86,27 @@ body {
 .form-control-check input {
   flex: 2;
   height: 20px;
+}
+.task {
+  width: 100%;
+  background-color: rgb(240, 237, 231);
+  margin-top: 10px;
+  border-radius: 0px;
+  background: #ffffff;
+  box-shadow: 5px 5px 43px #f0f0f0, -5px -5px 43px #ffffff;
+}
+.task h3 {
+  margin-left: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  color: rgb(163, 154, 154);
+}
+.task p {
+  margin-left: 10px;
+  padding: 5px;
+}
+.activeReminder {
+  border-left: solid 5px rgb(255, 14, 1);
 }

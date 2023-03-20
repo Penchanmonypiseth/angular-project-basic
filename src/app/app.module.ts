@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ContainerComponent } from './product-page/container/container.component';
 import { ProductComponent } from './product-page/product/product.component';
@@ -15,6 +15,8 @@ import { HeaderComponent } from './todo-app/header/header.component';
 import { ButtonComponent } from './todo-app/button/button.component';
 import { TasksContentComponent } from './todo-app/tasks-content/tasks-content.component';
 import { TasksItemsComponent } from './todo-app/tasks-items/tasks-items.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AddTasksComponent } from './todo-app/add-tasks/add-tasks.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,8 +32,9 @@ import { TasksItemsComponent } from './todo-app/tasks-items/tasks-items.componen
     ButtonComponent,
     TasksContentComponent,
     TasksItemsComponent,
+    AddTasksComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, FontAwesomeModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
