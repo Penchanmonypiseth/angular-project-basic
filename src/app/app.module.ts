@@ -17,6 +17,9 @@ import { TasksContentComponent } from './todo-app/tasks-content/tasks-content.co
 import { TasksItemsComponent } from './todo-app/tasks-items/tasks-items.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddTasksComponent } from './todo-app/add-tasks/add-tasks.component';
+import { FormAppComponent } from './form-control/form-app/form-app.component';
+import { MostLikesProductComponent } from './most-likes-product/most-likes-product/most-likes-product.component';
+import { MostLikeDirective } from './custom-directive/most-like.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +36,9 @@ import { AddTasksComponent } from './todo-app/add-tasks/add-tasks.component';
     TasksContentComponent,
     TasksItemsComponent,
     AddTasksComponent,
+    FormAppComponent,
+    MostLikesProductComponent,
+    MostLikeDirective,
   ],
   imports: [BrowserModule, FormsModule, FontAwesomeModule, HttpClientModule],
   providers: [],

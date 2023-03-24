@@ -110,3 +110,6 @@ body {
 .activeReminder {
   border-left: solid 5px rgb(255, 14, 1);
 }
+.most-like-active {
+  border: solid 2px yellow;
+}

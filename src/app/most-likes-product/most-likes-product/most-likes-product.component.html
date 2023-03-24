@@ -1,0 +1,16 @@
+<div class="cards">
+  <div class="card" *ngFor="let item of videos">
+    <div class="container-card"
+      [appMostLike]="item.like === mostLikeVideo.like"
+    >
+      <h4>{{ item.title }}</h4>
+      <div class="img">
+        <img [src]="item.thumbnail" alt="img-1" />
+        <div class="react">
+          <p>Like: {{ item.like }}</p>
+          <p>Share: {{ item.share }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
